@@ -5,14 +5,14 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function (req, res, next) {
     var proxy_host = process.env.HTTP_PROXY_PORT || '127.0.0.1';
-    var proxy_port = process.env.HTTP_PROXY_PORT || '13092'; // 30101
+    var proxy_port = process.env.HTTP_PROXY_PORT || '31447'; // 30101
     console.log(proxy_host + ':' + proxy_port);
     console.log(req.query.city + ", " + req.query.type);
     var opt = {
         host: proxy_host,
         port: proxy_port,
         method: 'GET',    //这里是发送的方法
-        path: 'http://127.0.0.1:13092/fusionweather/show?city=' + req.query.city.toLocaleLowerCase(),    //这里是访问的路径
+        path: 'http://127.0.0.1:31447/fusionweather/show?city=' + req.query.city.toLocaleLowerCase(),    //这里是访问的路径
         headers: {}
     };
     if (req.query.user) {
