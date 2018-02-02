@@ -1,7 +1,6 @@
 package com.service.fusionweather.controller;
 
-import io.servicecomb.provider.springmvc.reference.RestTemplateBuilder;
-import io.vertx.core.json.Json;
+import org.apache.servicecomb.provider.springmvc.reference.RestTemplateBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -11,6 +10,8 @@ import org.springframework.web.client.RestTemplate;
 import com.service.fusionweather.entity.CurrentWeatherSummary;
 import com.service.fusionweather.entity.ForecastWeatherSummary;
 import com.service.fusionweather.entity.FusionWeatherSummary;
+
+import io.vertx.core.json.Json;
 
 @Component
 public class FusionweatherImplDelegate

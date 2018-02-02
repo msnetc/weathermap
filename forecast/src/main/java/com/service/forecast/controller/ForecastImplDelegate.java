@@ -1,13 +1,11 @@
 package com.service.forecast.controller;
 
-import com.service.forecast.entity.objective.ForecastSummary;
-import com.service.forecast.util.CacheUtil;
-
-import io.servicecomb.foundation.common.utils.BeanUtils;
-
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import com.service.forecast.entity.objective.ForecastSummary;
+import com.service.forecast.util.CacheUtil;
 
 @Component
 public class ForecastImplDelegate

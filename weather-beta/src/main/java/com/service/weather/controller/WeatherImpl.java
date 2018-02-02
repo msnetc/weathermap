@@ -1,14 +1,15 @@
 package com.service.weather.controller;
 
-import io.servicecomb.provider.rest.common.RestSchema;
-import io.vertx.core.json.Json;
-import io.vertx.core.json.JsonObject;
+import javax.ws.rs.core.MediaType;
+
+import org.apache.servicecomb.provider.rest.common.RestSchema;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.ws.rs.core.MediaType;
+import io.vertx.core.json.Json;
+import io.vertx.core.json.JsonObject;
 
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.CseSpringDemoCodegen", date = "2017-11-01T10:26:36.166+08:00")
 
