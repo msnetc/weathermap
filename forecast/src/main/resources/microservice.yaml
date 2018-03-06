@@ -1,4 +1,4 @@
-APPLICATION_ID: weathermap_lijie
+APPLICATION_ID: weathermap
 service_description:
   name: forecast
   version: 0.0.1
