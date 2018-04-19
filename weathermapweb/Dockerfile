@@ -1,4 +1,4 @@
-From 100.125.0.198:20202/hwcse/nodejs:1.0.0
+From 192.168.0.249:20202/hwcse/nodejs:1.0.0
 
 WORKDIR /home/apps/
 COPY ./app.js ./
